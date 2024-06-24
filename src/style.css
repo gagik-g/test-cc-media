@@ -65,13 +65,17 @@
 }
 .modal-content {
   background-color: #fff;
-  margin: 15% auto;
   padding: 20px;
   border: none;
   width: 500px;
   min-height: 380px;
   border-radius: 12px;
-  position: relative;
+  position: absolute;
+  margin: 0 auto;
+  vertical-align: bottom;
+  left: -50%;
+  right: -50%;
+  top: calc(50% - 250px);
 }
 .modal-content #modal-description {
   height: 310px;
