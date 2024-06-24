@@ -235,8 +235,7 @@
   border-radius: 12px;
 }
 .product-item img {
-  height: auto;
-  max-height: 200px;
+  height: 200px;
 }
 .product-item .title {
   font-size: 20px;
