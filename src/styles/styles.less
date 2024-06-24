@@ -1,0 +1,28 @@
+@import "./theme.less";
+@import "./modal.less";
+@import "./dropdown.less";
+@import "./product.less";
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: @bgDefault;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (orientation: portrait) {
+  .products-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (orientation: landscape) {
+  .products-container {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}

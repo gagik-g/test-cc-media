@@ -1,0 +1,22 @@
+{
+  "name": "gagik-test-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest --typecheck",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.1.0",
+    "jsdom": "^24.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.4.6"
+  }
+}

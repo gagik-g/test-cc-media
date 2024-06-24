@@ -1,0 +1,120 @@
+@import "./theme.less";
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: none;
+  width: 500px;
+  min-height: 380px;
+  border-radius: 12px;
+  position: relative;
+
+  #modal-description {
+    height: 310px;
+
+    .description {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+
+    .image-and-description {
+      height: 310px;
+      overflow: auto;
+      .item-wrapper {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        border-radius: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 12px solid @yellow;
+        position: relative;
+        overflow: hidden;
+        -webkit-shape-outside: circle();
+        shape-outside: circle();
+        float: left;
+        margin-right: 20px;
+        box-shadow: 5px 4px 11px 3px rgb(0 0 0 / 16%);
+
+        .border-bottom {
+          height: 24px;
+          background: @yellow;
+          position: absolute;
+          bottom: 0;
+          width: 300px;
+          left: 0;
+        }
+
+        .abv-modal {
+          position: absolute;
+          bottom: 0;
+          right: -50%;
+          left: -50%;
+          font-weight: 600;
+        }
+
+        .ibu-modal {
+          color: @green;
+          position: absolute;
+          top: 40%;
+          left: 10px;
+          width: 20px;
+          height: 20px;
+          font-weight: 600;
+          font-size: 16px;
+        }
+
+        >img {
+          max-height: 220px;
+        }
+      }
+    }
+  }
+
+  #modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .title {
+      width: 300px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  color: black;
+  font-size: 36px;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+
+  &:focus, &:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

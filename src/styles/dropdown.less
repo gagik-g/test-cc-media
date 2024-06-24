@@ -1,0 +1,73 @@
+@import "./theme.less";
+
+.dropdownWrapper {
+  position: relative;
+}
+.order {
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  background: @green;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.popover {
+  width: 90px;
+  position: absolute;
+  display: none;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #8a8a8a;
+
+  &.level2 {
+    width: 40px;
+    position: absolute;
+    display: none;
+    border: 1px solid #8a8a8a;
+    right: -32px;
+    top: 0;
+  }
+
+  .popover-item {
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background: white;
+    border-top: 1px solid #8a8a8a;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .name {
+      padding: 0 16px;
+      width: 100%;
+    }
+
+    &:hover {
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+  }
+}
+
+.arrow {
+  font-size: 28px;
+  font-weight: 400;
+  position: absolute;
+  right: 8px;
+  top: 0;
+
+  &.right {
+    top: 10px;
+    right: 16px;
+    font-size: 18px;
+    transform: rotate(90deg);
+  }
+}
